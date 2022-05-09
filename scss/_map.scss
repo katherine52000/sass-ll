@@ -1,0 +1,37 @@
+$primary: rgb(38, 151, 203);
+$secondary: green;
+$error:red;
+$info:yellow;
+$h:2rem;
+$w: 2rem;
+
+
+$colors:(
+"primary": $primary,
+"secondary": $secondary,
+"error": $secondary,
+"info": $info,
+"blue": blue,
+"yellow":yellow,
+"red":red,
+"white":#fff,
+"black": #000,
+
+);
+
+
+
+@debug map-get($colors, "red");
+@debug map-has-key($colors, "secondary");
+@debug map-has-key($colors, "tertiary");
+@debug map-merge($colors, ("pink": rgb(183, 88, 104)));
+
+ .related-post, button{
+
+background-color: map-get($colors, "black" );
+color: map-get($colors,"white");
+width: 5rem;
+height: 3rem;
+border-radius: 1rem;
+
+ }

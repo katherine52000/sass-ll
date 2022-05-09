@@ -1,0 +1,23 @@
+@mixin post-padding($h, $w){
+
+    height: $h;
+    width: $w;
+
+};
+
+
+.container > .related-post {
+    background: #2d3436;
+      color: #fff;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+    @include post-padding(180px, 150px)
+
+}
+
+
+
+
